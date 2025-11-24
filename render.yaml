@@ -1,0 +1,10 @@
+# render.yaml
+services:
+  - type: web
+    name: fake-json-api
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
